@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: Sobre
+description: Biografia profissional e contatos de Vítor Almeida, jornalista de dados e pesquisador.
+permalink: sobre/index.html
+---
+{% from "components/page-header.njk" import pageHeader %}
+
+{{ pageHeader("Perfil profissional", "Sobre", "Jornalismo, programação e pesquisa como partes do mesmo processo de investigação.") }}
+
+<section class="about-story shell">
+  <div class="about-story__marker" aria-hidden="true"><span>VA</span><span>0013382/PR</span></div>
+  <div class="about-story__text">
+    {% for paragraph in perfil.biografia %}<p{% if loop.first %} class="lede"{% endif %}>{{ paragraph }}</p>{% endfor %}
+  </div>
+</section>
+
+<section class="contact-section shell">
+  <p class="eyebrow">Contato e perfis</p>
+  <h2>Vamos conversar.</h2>
+  <div class="contact-grid">
+    <a href="mailto:{{ site.email }}"><span>E-mail</span><strong>{{ site.email }}</strong><i aria-hidden="true">↗</i></a>
+    <a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer"><span>Código</span><strong>GitHub</strong><i aria-hidden="true">↗</i></a>
+    <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer"><span>Perfil profissional</span><strong>LinkedIn</strong><i aria-hidden="true">↗</i></a>
+    <a href="{{ site.links.instagram }}" target="_blank" rel="noopener noreferrer"><span>Publicações</span><strong>Instagram</strong><i aria-hidden="true">↗</i></a>
+  </div>
+</section>

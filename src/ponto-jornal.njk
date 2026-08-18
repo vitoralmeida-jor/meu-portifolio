@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+title: Ponto Jornal
+description: A participação de Vítor Almeida no Ponto Jornal, com reportagens, visualizações, dados e podcast.
+permalink: ponto-jornal/index.html
+---
+{% from "components/page-header.njk" import pageHeader %}
+{% from "components/card.njk" import card %}
+
+{{ pageHeader("Projeto independente", "Ponto Jornal", "Jornalismo local orientado por dados, com reportagens, podcasts, visualizações e métodos transparentes.") }}
+
+<section class="narrative shell">
+  <div class="narrative__aside"><p class="eyebrow">Minha participação</p><p class="stat-label">Cofundador</p></div>
+  <div class="narrative__body">
+    <h2>Dados não substituem a reportagem. Eles abrem novas perguntas.</h2>
+    <p>O Ponto Jornal é um espaço de experimentação editorial que aproxima jornalismo de dados e questões locais. Minha atuação envolve a construção de pautas, análise de bases, programação e desenvolvimento de formatos para comunicar os resultados.</p>
+    <p>Esta página reúne minha participação no projeto sem reproduzir o site oficial. O conteúdo abaixo usa os mesmos registros do restante do portfólio.</p>
+    <a class="button-link" href="{{ site.links.pontoJornal }}" target="_blank" rel="noopener noreferrer">Visitar o Ponto Jornal <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+
+<section class="section shell" aria-labelledby="ponto-selecao">
+  <div class="section-heading"><div><p class="eyebrow">Seleção</p><h2 id="ponto-selecao">Trabalhos do projeto</h2></div></div>
+  <div class="work-grid">
+    {% for reportagem in reportagens %}{% if "ponto-jornal" in reportagem.contexts %}{{ card(reportagem, "reportagem") }}{% endif %}{% endfor %}
+    {% for projeto in projetos %}{% if "ponto-jornal" in projeto.contexts %}{{ card(projeto, "projeto") }}{% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="audio-section shell" aria-labelledby="podcast-title">
+  <div><p class="eyebrow">Podcast</p><h2 id="podcast-title">Ouça um dos trabalhos</h2><p>Investigação sobre o público das salas de cinema a partir de milhões de registros da ANCINE.</p></div>
+  {% for reportagem in reportagens %}{% if reportagem.audio %}
+    <iframe src="{{ reportagem.audio.embedUrl }}" title="{{ reportagem.audio.title }}" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  {% endif %}{% endfor %}
+</section>

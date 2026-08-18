@@ -1,0 +1,132 @@
+[
+  {
+    "id": "cinema-zero-pessoas",
+    "slug": "cinema-zero-pessoas",
+    "title": "Filmes para zero pessoas: esse é o público mais recorrente nas salas de cinema em PG",
+    "year": 2025,
+    "organization": "Ponto Jornalismo de Dados",
+    "url": "https://pontojornal.com.br/2025/12/27/filmes-para-zero-pessoas-esse-e-o-publico-mais-recorrente-nas-salas-de-cinema-em-pg/",
+    "description": "Durante quase uma década, o público mais recorrente nas sessões de cinema de Ponta Grossa não foi formado por casais, famílias ou grupos de amigos, mas por fantasmas. Entre julho de 2016 e outubro de 2025, as sessões sem nenhum espectador foram as mais frequentes nas salas comerciais da cidade. O levantamento desconsidera o período da pandemia de Covid-19, quando os cinemas estiveram fechados.",
+    "image": {
+      "src": "/assets/images/projects/cinema-cover.webp",
+      "alt": "Fileiras de poltronas vermelhas vazias em uma sala de cinema"
+    },
+    "categories": ["Jornalismo de dados", "Cultura", "Python"],
+    "contexts": ["reportagens", "ponto-jornal"],
+    "featured": true,
+    "home": true,
+    "links": [
+      {
+        "label": "Ler reportagem",
+        "url": "https://pontojornal.com.br/2025/12/27/filmes-para-zero-pessoas-esse-e-o-publico-mais-recorrente-nas-salas-de-cinema-em-pg/",
+        "type": "report"
+      },
+      {
+        "label": "GitHub · Ponta Grossa",
+        "url": "https://github.com/vitoralmeida-jor/Publico-Cinema-em-PG",
+        "type": "github"
+      },
+      {
+        "label": "GitHub · Brasil",
+        "url": "https://github.com/vitoralmeida-jor/Python-Pandas-Publico-Cinema-Brasil-2014-2025-ANCINE.git",
+        "type": "github"
+      },
+      {
+        "label": "Ver no Instagram",
+        "url": "https://www.instagram.com/p/DRiJn9QiRwK/?img_index=2",
+        "type": "report"
+      }
+    ],
+    "audio": {
+      "title": "Episódio sobre o público dos cinemas",
+      "embedUrl": "https://open.spotify.com/embed/episode/7aMVJa8D2aNiHKHSwaqOpy?utm_source=generator"
+    }
+  },
+  {
+    "id": "invisibilidade-estatistica-lgbtqiapn",
+    "slug": "invisibilidade-estatistica-lgbtqiapn",
+    "title": "Quando faltam dados, faltam direitos: a invisibilidade estatística da comunidade LGBTQIAPN+",
+    "year": 2025,
+    "organization": "Ponto Jornalismo de Dados",
+    "url": "https://pontojornal.com.br/2025/12/05/quando-faltam-dados-faltam-direitos-a-invisibilidade-estatistica-da-comunidade-lgbtqiapn/",
+    "description": "Em Ponta Grossa, o número de denúncias de violações contra pessoas LGBTQIAPN+ mais do que dobrou entre 2024 e 2025. Foram quatro denúncias, que somaram 26 violações, em 2024. Em 2025, até o último balanço disponível, de 24 de setembro, foram nove denúncias e 106 violações. Os registros, no entanto, estão longe de representar necessariamente o tamanho da violência enfrentada por essa população.",
+    "image": {
+      "src": "/assets/images/projects/lgbtqiapn-cover.webp",
+      "alt": "Bandeiras com as cores do arco-íris em primeiro plano"
+    },
+    "categories": ["Jornalismo de dados", "Direitos humanos", "LGBTQIAPN+"],
+    "contexts": ["reportagens", "ponto-jornal"],
+    "featured": false,
+    "home": true,
+    "links": [
+      {
+        "label": "Ler reportagem",
+        "url": "https://pontojornal.com.br/2025/12/05/quando-faltam-dados-faltam-direitos-a-invisibilidade-estatistica-da-comunidade-lgbtqiapn/",
+        "type": "report"
+      }
+    ]
+  },
+  {
+    "id": "merenda-escolar-jogo-politico",
+    "slug": "merenda-escolar-jogo-politico",
+    "title": "Merenda Escolar em PG: o jogo político de R$ 88 milhões",
+    "year": 2026,
+    "organization": "Ponto Jornalismo de Dados",
+    "url": "https://pontojornal.com.br/2026/05/08/merenda-escolar-em-pg-o-jogo-politico-de-r88-milhoes/",
+    "description": "Em Ponta Grossa, a merenda das escolas municipais é terceirizada. A licitação que contemplou a Ômega Alimentação como vencedora tem, segundo apuração do Ponto Jornal, 5.191 termos em comum com o mesmo pregão de Sumaré (SP). A empresa foi alvo de investigação do Ministério Público do Paraná pelas condições de armazenamento dos alimentos. A prefeitura suspendeu o contrato e convocou a segunda colocada, Soluções Serviços Terceirizados, para assumir a gestão da merenda pelo prazo inicial de 180 dias.",
+    "image": {
+      "src": "/assets/images/projects/merenda-escolar-cover.webp",
+      "alt": "Montagem com diferentes refeições escolares sobre uma mesa"
+    },
+    "categories": ["Jornalismo de dados", "Educação", "Licitação"],
+    "contexts": ["reportagens", "ponto-jornal"],
+    "featured": false,
+    "home": true,
+    "links": [
+      {
+        "label": "Ler reportagem",
+        "url": "https://pontojornal.com.br/2026/05/08/merenda-escolar-em-pg-o-jogo-politico-de-r88-milhoes/",
+        "type": "report"
+      }
+    ]
+  },
+  {
+    "id": "agricultura-familiar-legislacao",
+    "slug": "agricultura-familiar-legislacao",
+    "title": "Agricultura familiar: prefeita sanciona lei em discordância com a legislação federal",
+    "year": null,
+    "organization": "Ponto Jornalismo de Dados",
+    "description": "",
+    "image": null,
+    "categories": ["Ponto Jornal"],
+    "contexts": ["reportagens", "ponto-jornal"],
+    "featured": false,
+    "links": []
+  },
+  {
+    "id": "atividade-vereadores-ponta-grossa",
+    "slug": "atividade-vereadores-ponta-grossa",
+    "title": "O que fazem os vereadores? Dados mostram quem são os parlamentares mais ativos nas proposições ao município",
+    "year": null,
+    "organization": "Ponto Jornalismo de Dados",
+    "description": "",
+    "image": null,
+    "categories": ["Ponto Jornal"],
+    "contexts": ["reportagens", "ponto-jornal"],
+    "featured": false,
+    "links": []
+  },
+  {
+    "id": "queda-autorizacao-armas-ponta-grossa",
+    "slug": "queda-autorizacao-armas-ponta-grossa",
+    "title": "Por que ninguém quer mais saber de armas? Busca por autorização de compra em Ponta Grossa cai mais de 15 vezes",
+    "year": null,
+    "organization": "Ponto Jornalismo de Dados",
+    "description": "",
+    "image": null,
+    "categories": ["Ponto Jornal"],
+    "contexts": ["reportagens", "ponto-jornal"],
+    "featured": false,
+    "links": []
+  }
+]

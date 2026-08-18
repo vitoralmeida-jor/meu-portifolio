@@ -1,0 +1,13 @@
+{% macro publication(item) %}
+<article class="publication-item">
+  <p class="eyebrow">{{ item.type }} · {{ item.year }}</p>
+  <h3>{{ item.title }}</h3>
+  {% if item.authors %}<p>{{ item.authors | join(", ") }}</p>{% endif %}
+  {% if item.venue %}<p class="publication-item__venue">{{ item.venue }}</p>{% endif %}
+  <div class="text-links">
+    {% if item.doi %}<a href="https://doi.org/{{ item.doi }}">DOI <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if item.pdfUrl %}<a href="{{ item.pdfUrl }}">PDF <span aria-hidden="true">↗</span></a>{% endif %}
+    {% if item.externalUrl %}<a href="{{ item.externalUrl }}">Link externo <span aria-hidden="true">↗</span></a>{% endif %}
+  </div>
+</article>
+{% endmacro %}

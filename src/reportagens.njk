@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Reportagens
+description: Reportagens e trabalhos jornalísticos de Vítor Almeida.
+permalink: reportagens/index.html
+---
+{% from "components/page-header.njk" import pageHeader %}
+{% from "components/card.njk" import card %}
+
+{{ pageHeader("Portfólio jornalístico", "Reportagens", "Apurações que combinam observação, entrevistas, documentos, programação e análise de dados.") }}
+
+<section class="listing shell" aria-labelledby="reportagens-lista">
+  <div class="listing-tools">
+    <h2 id="reportagens-lista">Todos os trabalhos</h2>
+    <div class="filters" data-filters aria-label="Filtrar reportagens">
+      <button type="button" class="is-active" data-filter="all" aria-pressed="true">Todas</button>
+      <button type="button" data-filter="jornalismo de dados" aria-pressed="false">Jornalismo de dados</button>
+      <button type="button" data-filter="cultura" aria-pressed="false">Cultura</button>
+      <button type="button" data-filter="ponto jornal" aria-pressed="false">Ponto Jornal</button>
+    </div>
+  </div>
+  <div class="work-grid" data-filter-grid>
+    {% for reportagem in reportagens %}
+      <div class="filter-item" data-categories="{{ reportagem.categories | join('|') | lower }}">{{ card(reportagem, "reportagem") }}</div>
+    {% endfor %}
+  </div>
+  <p class="empty-state" data-empty-state hidden>Nenhum trabalho encontrado neste filtro.</p>
+</section>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "representacao-imagetica-iag-il-foglio-ai",
+    "type": "Artigo em periódico",
+    "title": "A representação imagética dos fatos jornalísticos na era da Inteligência Artificial Generativa (IAG): uma análise sobre o jornal italiano Il Foglio AI",
+    "authors": ["Leriany Barbosa", "David Candido dos Santos", "Graziela Soares Bianchi", "Paulo Pessôa Neto", "Vítor Almeida dos Santos"],
+    "venue": "Contemporanea (UFBA. Online), v. 24, p. 1",
+    "year": 2026
+  },
+  {
+    "id": "dados-sao-fontes-no-jornalismo",
+    "type": "Trabalho em evento",
+    "title": "Dados são fontes no jornalismo? Contribuições sobre o conceito de Jornalismo de Dados",
+    "authors": ["Cíntia Xavier", "Vítor Almeida dos Santos"],
+    "venue": "35º Encontro Anual da Compós · Natal",
+    "year": 2026
+  },
+  {
+    "id": "aspectos-historicos-jornalismo-dados",
+    "type": "Trabalho em evento",
+    "title": "Aspectos históricos do Jornalismo de Dados: uma exploração bibliográfica",
+    "authors": ["Vítor Almeida dos Santos", "Cíntia Xavier"],
+    "venue": "15º Encontro Nacional de História da Mídia · Mariana, Minas Gerais",
+    "year": 2025
+  },
+  {
+    "id": "abordagens-epistemologicas-jornalismo-dados",
+    "type": "Trabalho em evento",
+    "title": "Abordagens epistemológicas do jornalismo de dados: um levantamento exploratório",
+    "authors": ["Vítor Almeida dos Santos"],
+    "venue": "23º Encontro Nacional de Pesquisadores em Jornalismo · Ponta Grossa",
+    "year": 2025
+  },
+  {
+    "id": "fontes-mario-magalhaes-marighella",
+    "type": "Trabalho em evento",
+    "title": "As fontes utilizadas por Mário Magalhães na biografia de Carlos Marighella: metodologia e resultados",
+    "authors": ["Vítor Almeida dos Santos", "Cíntia Xavier"],
+    "venue": "XXIII Seminário de Inverno de Estudos em Jornalismo · Ponta Grossa",
+    "year": 2025
+  }
+]

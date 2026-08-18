@@ -1,0 +1,18 @@
+{
+  "name": "Vítor Almeida dos Santos",
+  "shortName": "Vítor Almeida",
+  "role": "Jornalista de dados e pesquisador",
+  "description": "Portfólio de Vítor Almeida: reportagens, dados, visualizações, programação aplicada ao jornalismo e pesquisa acadêmica.",
+  "url": "https://vitoralmeida-jor.github.io",
+  "pathPrefix": "/meu-portifolio/",
+  "email": "vitoralmeida.jor@gmail.com",
+  "bioShort": "Jornalista de dados, cofundador do Ponto Jornalismo de Dados e mestrando em Jornalismo no PPGJOR/UEPG.",
+  "links": {
+    "github": "https://github.com/vitoralmeida-jor",
+    "linkedin": "https://www.linkedin.com/in/vitoralsan/",
+    "instagram": "https://www.instagram.com/vitoralsan/",
+    "pontoJornal": "https://pontojornal.com.br/",
+    "lattes": "",
+    "orcid": ""
+  }
+}

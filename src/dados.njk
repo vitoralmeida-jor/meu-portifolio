@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+title: Dados & Visualizações
+description: Visualizações, bases de dados, mapas, análises e ferramentas desenvolvidas por Vítor Almeida.
+permalink: dados/index.html
+---
+{% from "components/page-header.njk" import pageHeader %}
+{% from "components/card.njk" import card %}
+{% from "components/visualization.njk" import visualization %}
+
+{{ pageHeader("Código como método", "Dados & Visualizações", "Bases, análises, scrapers, mapas e experiências visuais desenvolvidas para investigar e comunicar.") }}
+
+<section class="listing shell" aria-labelledby="projetos-lista">
+  <div class="listing-tools">
+    <h2 id="projetos-lista">Projetos</h2>
+    <div class="filters" data-filters aria-label="Filtrar projetos">
+      <button type="button" class="is-active" data-filter="all" aria-pressed="true">Todos</button>
+      <button type="button" data-filter="visualização" aria-pressed="false">Visualizações</button>
+      <button type="button" data-filter="meio ambiente" aria-pressed="false">Meio ambiente</button>
+    </div>
+  </div>
+  <div class="work-grid" data-filter-grid>
+    {% for projeto in projetos %}
+      <div class="filter-item" data-categories="{{ projeto.categories | join('|') | lower }}|{{ projeto.kind | lower }}">{{ card(projeto, "projeto") }}</div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="embeds shell" aria-labelledby="visualizacoes-incorporadas">
+  <div class="section-heading section-heading--rule">
+    <div><p class="eyebrow">Explore</p><h2 id="visualizacoes-incorporadas">Visualizações incorporadas</h2></div>
+  </div>
+  {% for projeto in projetos %}{% if projeto.visualization %}{{ visualization(projeto) }}{% endif %}{% endfor %}
+</section>

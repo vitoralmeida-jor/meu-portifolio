@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Pesquisa & Academia
+description: Formação, interesses de pesquisa, artigos e apresentações acadêmicas de Vítor Almeida.
+permalink: pesquisa/index.html
+---
+{% from "components/page-header.njk" import pageHeader %}
+{% from "components/publication.njk" import publication %}
+
+{{ pageHeader("Trajetória acadêmica", "Pesquisa & Academia", "Investigações sobre jornalismo, tecnologia, dados e métodos computacionais.") }}
+
+<section class="research-intro shell">
+  <div>
+    <p class="eyebrow">Biografia acadêmica</p>
+    <h2>Pesquisa conectada à prática jornalística.</h2>
+  </div>
+  <div>
+    <p>Sou mestrando no Programa de Pós-Graduação em Jornalismo da Universidade Estadual de Ponta Grossa, de 2025 a 2027. Minha pesquisa se concentra no conceito de jornalismo de dados e no uso de dados no jornalismo.</p>
+    <p class="content-note">Também curso especialização avançada em Python e cursei, como aluno externo, a disciplina de Aprendizado de Máquina no mestrado em Ciência da Computação da UTFPR.</p>
+  </div>
+</section>
+
+<section class="timeline-section shell" aria-labelledby="formacao-title">
+  <p class="eyebrow">Formação</p>
+  <h2 id="formacao-title">Percurso</h2>
+  <ol class="timeline-list">
+    {% for item in perfil.formacao %}
+      <li><span>{{ loop.index }}</span><div><h3>{{ item.course }}</h3><p>{{ item.institution }}</p><p>{{ item.details }}</p></div><p>{{ item.period }}</p></li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="publications shell" aria-labelledby="publicacoes-title">
+  <div class="section-heading section-heading--rule"><div><p class="eyebrow">Produção</p><h2 id="publicacoes-title">Publicações</h2></div></div>
+  <div class="publication-list">{% for item in publicacoes %}{{ publication(item) }}{% endfor %}</div>
+</section>
+
+<section class="publications shell" aria-labelledby="apresentacoes-title">
+  <div class="section-heading section-heading--rule"><div><p class="eyebrow">Congressos e eventos</p><h2 id="apresentacoes-title">Apresentações</h2></div></div>
+  {% if apresentacoes.length %}
+    <div class="publication-list">{% for item in apresentacoes %}{{ publication(item) }}{% endfor %}</div>
+  {% else %}
+    <div class="content-placeholder"><p class="eyebrow">Em atualização</p><h3>Trabalhos apresentados serão cadastrados aqui.</h3><p>A listagem comporta título, evento, ano, local e link relacionado.</p></div>
+  {% endif %}
+</section>
+
+<section class="academic-links shell">
+  <div><p class="eyebrow">Perfis acadêmicos</p><h2>Currículos e identificadores</h2></div>
+  <div class="academic-links__list">
+    {% if site.links.lattes %}<a href="{{ site.links.lattes }}">Currículo Lattes <span>↗</span></a>{% else %}<span>Currículo Lattes · link a incluir</span>{% endif %}
+    {% if site.links.orcid %}<a href="{{ site.links.orcid }}">ORCID <span>↗</span></a>{% else %}<span>ORCID · link a incluir</span>{% endif %}
+  </div>
+</section>

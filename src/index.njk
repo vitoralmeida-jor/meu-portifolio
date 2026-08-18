@@ -1,0 +1,96 @@
+---
+layout: layouts/base.njk
+title: Início
+description: Jornalismo de dados, visualizações e pesquisa de Vítor Almeida dos Santos.
+permalink: index.html
+---
+{% from "components/card.njk" import card %}
+{% from "components/visualization.njk" import visualization %}
+
+<section class="hero shell" id="sobre">
+  <p class="eyebrow hero__eyebrow">Jornalismo de dados · Pesquisa · Programação</p>
+  <h1>Vítor Almeida, repórter e pesquisador de dados.</h1>
+  <div class="hero__bottom">
+    <p class="hero__intro">{{ site.bioShort }}</p>
+    <div class="hero__meta" aria-label="Áreas de atuação">
+      <span>Reportagem</span><span>Visualização</span><span>Pesquisa acadêmica</span>
+    </div>
+  </div>
+</section>
+
+<section class="section shell" id="reportagens" aria-labelledby="reportagens-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Jornalismo</p>
+      <h2 id="reportagens-title">Reportagens</h2>
+    </div>
+  </div>
+  <div class="work-grid home-report-grid">
+    {% for reportagem in reportagens %}{% if reportagem.home %}{{ card(reportagem, "reportagem") }}{% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="home-data shell" id="dados" aria-labelledby="dados-title">
+  <div class="section-heading section-heading--rule">
+    <div><p class="eyebrow">Bases tratadas e formatos interativos</p><h2 id="dados-title">Dados &amp; Visualizações</h2></div>
+  </div>
+  {% for projeto in projetos %}{{ visualization(projeto) }}{% endfor %}
+</section>
+
+<section class="profile-intro shell" id="biografia" aria-labelledby="biografia-title">
+  <div><p class="eyebrow">Biografia</p><h2 id="biografia-title">Jornalismo, dados e pesquisa.</h2></div>
+  <div class="profile-intro__text">{% for paragraph in perfil.biografia %}<p>{{ paragraph }}</p>{% endfor %}</div>
+</section>
+
+<section class="career-section shell" id="trajetoria" aria-labelledby="trajetoria-title">
+  <div class="section-heading section-heading--rule"><div><p class="eyebrow">Formação & Experiência</p><h2 id="trajetoria-title">Trajetória</h2></div></div>
+  <div class="career-columns">
+    <div>
+      <h3 class="column-title">Formação</h3>
+      <ol class="compact-timeline">
+        {% for item in perfil.formacao %}
+          <li><p class="eyebrow">{{ item.period }}</p><h4>{{ item.course }}</h4><p>{{ item.institution }}</p><p>{{ item.details }}</p></li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div>
+      <h3 class="column-title">Experiência</h3>
+      <div class="experience-list">
+        {% for item in perfil.experiencias %}
+          <article>
+            {% if item.period %}<p class="eyebrow">{{ item.period }}</p>{% endif %}
+            <h4>{{ item.role }}</h4><p class="experience-list__organization">{{ item.organization }}</p>
+            <p>{{ item.description }}</p>
+            {% if item.responsibilities %}<ul>{% for responsibility in item.responsibilities %}<li>{{ responsibility }}</li>{% endfor %}</ul>{% endif %}
+            {% if item.groups %}<details><summary>Grupos de pesquisa</summary><ul>{% for group in item.groups %}<li>{{ group }}</li>{% endfor %}</ul></details>{% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="papers-section shell" id="pesquisa" aria-labelledby="papers-title">
+  <div class="section-heading section-heading--rule">
+    <div><p class="eyebrow">Produção acadêmica</p><h2 id="papers-title">Papers publicados</h2></div>
+  </div>
+  <div class="paper-cards">
+    {% for item in publicacoes %}
+      <article><p class="eyebrow">{{ item.type }} · {{ item.year }}</p><h3>{{ item.title }}</h3><p>{{ item.authors | join(", ") }}</p><p class="paper-cards__venue">{{ item.venue }}</p></article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="courses-section shell" id="cursos" aria-labelledby="cursos-title">
+  <div class="section-heading section-heading--rule"><div><p class="eyebrow">Formação complementar</p><h2 id="cursos-title">Cursos</h2></div></div>
+  <ol class="course-list">
+    {% for item in perfil.cursos %}<li><span>{{ item.year }}</span><div><h3>{{ item.title }}</h3><p>{{ item.institution }}</p></div></li>{% endfor %}
+  </ol>
+</section>
+
+<section class="skills-section shell" id="habilidades" aria-labelledby="habilidades-title">
+  <div class="section-heading section-heading--rule"><div><p class="eyebrow">Métodos & Ferramentas</p><h2 id="habilidades-title">Habilidades</h2></div></div>
+  <div class="skills-grid">
+    {% for group in perfil.habilidades %}<article><p class="skills-grid__index">0{{ loop.index }}</p><h3>{{ group.group }}</h3><ul>{% for item in group.items %}<li>{{ item }}</li>{% endfor %}</ul></article>{% endfor %}
+  </div>
+</section>

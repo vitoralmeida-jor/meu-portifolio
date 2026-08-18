@@ -1,0 +1,105 @@
+{
+  "biografia": [
+    "Sou Vítor Almeida, jornalista de dados e cofundador do Ponto Jornalismo de Dados, podcast narrativo que conta histórias por meio de dados, com foco no jornalismo regional dos Campos Gerais, no Paraná.",
+    "Sou mestrando em Jornalismo no Programa de Pós-Graduação em Jornalismo da Universidade Estadual de Ponta Grossa (PPGJOR/UEPG), de 2025 a 2027. Minha pesquisa se concentra no conceito de jornalismo de dados e no uso de dados no jornalismo. Para aperfeiçoar a coleta, a análise e a visualização de dados, curso especialização avançada em Python na Universidade Tecnológica Federal do Paraná (UTFPR). Também cursei, como aluno externo, a disciplina de Aprendizado de Máquina no mestrado em Ciência da Computação da UTFPR.",
+    "Trabalhei como Public Relations na Agência Gombo, especializada em data-driven marketing de influência, e fui editor-chefe do Além da Influência, veículo dedicado à Creator Economy e ao marketing de influência. Para a Universidade Estadual de Ponta Grossa, desenvolvo projetos orientados por dados, incluindo tratamento de dados para pesquisa, análises e revisões sistemáticas, além de busca, coleta e tratamento de dados com Python e Power BI."
+  ],
+  "formacao": [
+    {
+      "course": "Mestrado em Jornalismo",
+      "institution": "Programa de Pós-Graduação em Jornalismo · Universidade Estadual de Ponta Grossa",
+      "period": "2025–2027",
+      "details": "Pesquisa concentrada no conceito de jornalismo de dados."
+    },
+    {
+      "course": "Pós-graduação em Python Avançado",
+      "institution": "Universidade Tecnológica Federal do Paraná",
+      "period": "Em andamento",
+      "details": "Formação voltada à coleta, análise, automação e visualização de dados."
+    },
+    {
+      "course": "Bacharelado em Jornalismo",
+      "institution": "Universidade Estadual de Ponta Grossa",
+      "period": "2018–2022",
+      "details": "Graduação em Jornalismo."
+    }
+  ],
+  "experiencias": [
+    {
+      "role": "Cofundador",
+      "organization": "Ponto Jornalismo de Dados",
+      "period": "out. 2025 — atual",
+      "description": "Podcast narrativo de jornalismo de dados com foco nos Campos Gerais, no Paraná.",
+      "responsibilities": [
+        "Apuração de reportagens orientadas por dados",
+        "Elaboração de roteiro para o podcast semanal",
+        "Gravação, edição e publicação dos episódios"
+      ]
+    },
+    {
+      "role": "Bolsista CAPES",
+      "organization": "Universidade Estadual de Ponta Grossa",
+      "period": "abr. 2025 — atual",
+      "description": "Atuação em ensino e pesquisa no campo do jornalismo.",
+      "responsibilities": [
+        "Ministração de aulas na graduação",
+        "Orientação de estudantes da graduação em pesquisas acadêmicas"
+      ],
+      "groups": [
+        "Gemidi — Grupo de Mídias Digitais",
+        "DataJor — Núcleo de Estudos em Jornalismo de Dados e Computacional",
+        "Combate à Desinformação nos Campos Gerais",
+        "Lógicas de Produção e Consumo no Jornalismo"
+      ]
+    },
+    {
+      "role": "Public Relations",
+      "organization": "Agência Gombo",
+      "description": "Atuação em data-driven marketing de influência."
+    },
+    {
+      "role": "Editor-chefe",
+      "organization": "Além da Influência",
+      "description": "Edição de veículo especializado em Creator Economy e marketing de influência."
+    },
+    {
+      "role": "Projetos orientados por dados",
+      "organization": "Universidade Estadual de Ponta Grossa",
+      "description": "Tratamento de dados para pesquisa, análises e revisões sistemáticas, além de busca, coleta e tratamento de dados com Python e Power BI."
+    }
+  ],
+  "cursos": [
+    { "title": "Automação de Processos através da RPA para Transformação Digital", "institution": "Enap", "year": 2025 },
+    { "title": "Prompt Engineering 101 for Journalists", "institution": "Knight Center for Journalism in the Americas", "year": 2025 },
+    { "title": "Python para Data Science", "institution": "Alura", "year": 2024 },
+    { "title": "Claude e Python: desenvolva assistentes com a API da Anthropic", "institution": "Alura", "year": 2024 },
+    { "title": "Google Analytics 4: implementação e relatórios", "institution": "Alura", "year": 2024 },
+    { "title": "Data Driven Marketing", "institution": "Alura", "year": 2024 },
+    { "title": "Neuromarketing: estratégias e ações através do estudo da mente", "institution": "Alura", "year": 2024 },
+    { "title": "SEO: otimização de sites", "institution": "Alura", "year": 2024 },
+    { "title": "Tráfego pago: estratégias e aplicações", "institution": "Alura", "year": 2024 },
+    { "title": "Branding: criando uma marca forte", "institution": "Alura", "year": 2024 }
+  ],
+  "habilidades": [
+    {
+      "group": "Jornalismo & Narrativa",
+      "items": ["Redação jornalística, narrativa e institucional", "Data storytelling em texto, áudio e vídeo", "Apuração orientada por dados"]
+    },
+    {
+      "group": "Dados & Visualização",
+      "items": ["Power BI", "SQL", "PostgreSQL", "QGIS e dados georreferenciados"]
+    },
+    {
+      "group": "Python",
+      "items": ["Pandas", "Matplotlib", "Seaborn", "NumPy", "Plotly", "Selenium", "PyAutoGUI", "Playwright", "Requests", "Beautiful Soup", "os"]
+    },
+    {
+      "group": "Desenvolvimento",
+      "items": ["JavaScript", "Automação e scraping", "Coleta e tratamento de dados"]
+    },
+    {
+      "group": "Produção",
+      "items": ["Organização de eventos", "Gravação e edição de vídeo", "Gravação e edição de áudio", "Produção e edição de fotografia"]
+    }
+  ]
+}

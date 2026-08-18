@@ -1,0 +1,27 @@
+{% macro card(item, type) %}
+<article class="work-card">
+  <div class="work-card__media{% if not item.image %} work-card__media--placeholder{% endif %}">
+    {% if item.image %}
+      <img src="{{ item.image.src | url }}" alt="{{ item.image.alt }}" loading="lazy" width="800" height="500">
+    {% else %}
+      <span class="work-card__index" aria-hidden="true">{{ item.year or "PJ" }}</span>
+      <span class="work-card__signal" aria-hidden="true"></span>
+    {% endif %}
+  </div>
+  <div class="work-card__body">
+    <p class="eyebrow">{{ item.organization or item.kind }}{% if item.year %} <span>·</span> {{ item.year }}{% endif %}</p>
+    <h3>{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3>
+    {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+    {% if item.categories or item.technologies %}<ul class="tag-list" aria-label="Categorias">
+      {% for tag in item.categories or item.technologies %}<li>{{ tag }}</li>{% endfor %}
+    </ul>{% endif %}
+    {% if item.links and item.links.length %}
+      <div class="text-links">
+        {% for link in item.links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }} <span aria-hidden="true">↗</span></a>{% endfor %}
+      </div>
+    {% elseif item.visualization.externalUrl %}
+      <div class="text-links"><a href="{{ item.visualization.externalUrl }}" target="_blank" rel="noopener noreferrer">Abrir visualização <span aria-hidden="true">↗</span></a></div>
+    {% endif %}
+  </div>
+</article>
+{% endmacro %}

@@ -1,0 +1,23 @@
+{% macro visualization(item) %}
+<article class="visualization-block">
+  <header class="visualization-block__header">
+    <div>
+      <p class="eyebrow">{{ item.visualization.provider or item.kind }}</p>
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.description }}</p>
+    </div>
+    {% if item.visualization.externalUrl %}
+      <a href="{{ item.visualization.externalUrl }}" target="_blank" rel="noopener noreferrer">Abrir visualização em tela cheia <span aria-hidden="true">↗</span></a>
+    {% endif %}
+  </header>
+  {% if item.visualization.embedUrl %}
+    <div class="visualization-frame" style="--embed-height: {{ item.visualization.height or 640 }}px">
+      <iframe src="{{ item.visualization.embedUrl }}" title="{{ item.title }}" loading="lazy" allowfullscreen></iframe>
+    </div>
+  {% elseif item.image %}
+    <a class="visualization-preview" href="{{ item.visualization.externalUrl }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ item.image.src | url }}" alt="{{ item.image.alt }}" loading="lazy">
+    </a>
+  {% endif %}
+</article>
+{% endmacro %}

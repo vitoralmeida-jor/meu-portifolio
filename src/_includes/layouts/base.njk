@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} | {{ site.shortName }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="theme-color" content="#f4f0e8">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="{{ title }} | {{ site.shortName }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url | url }}">
+    <meta property="og:image" content="{{ site.url }}{{ '/assets/images/og.jpg' | url }}">
+    <meta property="og:image:alt" content="Vítor Almeida — Jornalismo, Dados e Pesquisa">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }} | {{ site.shortName }}">
+    <meta name="twitter:description" content="{{ description or site.description }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ '/assets/images/og.jpg' | url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@400;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Person","name":"{{ site.name }}","jobTitle":"Jornalista de dados e pesquisador","url":"{{ site.url }}{{ '/' | url }}","sameAs":["{{ site.links.github }}","{{ site.links.linkedin }}","{{ site.links.instagram }}"]}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | url }}" aria-label="Página inicial de {{ site.shortName }}">
+        <span class="brand__name">Vítor Almeida</span>
+        <span class="brand__mark" aria-hidden="true">VA/</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="true" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="{{ '/' | url }}#reportagens">Reportagens</a>
+        <a href="{{ '/' | url }}#dados">Dados &amp; Visualizações</a>
+        <a href="{{ '/' | url }}#biografia">Biografia</a>
+        <a href="{{ '/' | url }}#trajetoria">Trajetória</a>
+        <a href="{{ '/' | url }}#pesquisa">Papers</a>
+        <a href="{{ '/' | url }}#cursos">Cursos</a>
+        <a href="{{ '/' | url }}#habilidades">Habilidades</a>
+        <a href="{{ '/' | url }}#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer" id="contato">
+      <div class="site-footer__inner">
+        <div class="site-footer__callout">
+          <p class="eyebrow">Contato</p>
+          <p class="site-footer__name">Vamos conversar.</p>
+          <p>Para pautas, projetos, pesquisa e colaborações, fale comigo por um dos canais abaixo.</p>
+        </div>
+        <div class="site-footer__links" aria-label="Contatos profissionais">
+          <a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer"><span>Código e projetos</span><strong>GitHub</strong><i aria-hidden="true">↗</i></a>
+          <a href="mailto:{{ site.email }}"><span>Mensagem direta</span><strong>E-mail</strong><i aria-hidden="true">↗</i></a>
+          <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer"><span>Perfil profissional</span><strong>LinkedIn</strong><i aria-hidden="true">↗</i></a>
+        </div>
+        <p class="site-footer__legal">© 2026 · {{ site.name }} · Registro profissional 0013382/PR</p>
+      </div>
+    </footer>
+    <script src="{{ '/assets/js/main.js' | url }}" defer></script>
+  </body>
+</html>

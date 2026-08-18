@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-vitor-almeida",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "validate": "node scripts/validate-site.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6"
+  }
+}

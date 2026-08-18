@@ -1,0 +1,72 @@
+[
+  {
+    "id": "cobertura-terra-ponta-grossa",
+    "slug": "cobertura-terra-ponta-grossa",
+    "title": "Linha do tempo da cobertura da terra em Ponta Grossa (1985–2024)",
+    "kind": "Visualização",
+    "year": 2026,
+    "description": "Uma linha do tempo construída com dados do MapBiomas mostra como a cobertura da terra mudou no município ao longo de quatro décadas.",
+    "technologies": ["Python", "Flourish"],
+    "dataSource": "MapBiomas",
+    "categories": ["Meio ambiente", "Visualização"],
+    "contexts": ["dados", "ponto-jornal"],
+    "featured": true,
+    "image": {
+      "src": "https://public.flourish.studio/visualisation/28274954/thumbnail",
+      "alt": "Prévia da linha do tempo sobre cobertura da terra em Ponta Grossa"
+    },
+    "visualization": {
+      "provider": "Flourish",
+      "embedUrl": "https://flo.uri.sh/visualisation/28274954/embed",
+      "externalUrl": "https://public.flourish.studio/visualisation/28274954/",
+      "height": 640
+    },
+    "links": []
+  },
+  {
+    "id": "riscos-habitacao-favelas-ponta-grossa",
+    "slug": "riscos-habitacao-favelas-ponta-grossa",
+    "title": "Riscos de habitação nas favelas de Ponta Grossa",
+    "kind": "Mapa interativo",
+    "year": null,
+    "description": "Mapa público que reúne informações do IBGE e do PEHIS para explorar favelas e áreas de risco habitacional em Ponta Grossa.",
+    "technologies": ["Mapa interativo", "Dados georreferenciados"],
+    "dataSource": "IBGE e PEHIS",
+    "categories": ["Habitação", "Mapa", "Dados públicos"],
+    "contexts": ["dados", "ponto-jornal"],
+    "featured": false,
+    "image": null,
+    "visualization": {
+      "provider": "Mapa HTML",
+      "embedUrl": "https://pontojornal.com.br/mapa-favelas/",
+      "externalUrl": "https://pontojornal.com.br/mapa-favelas/",
+      "height": 720
+    },
+    "links": []
+  },
+  {
+    "id": "sessoes-cinema-ponta-grossa-2016-2025",
+    "slug": "sessoes-cinema-ponta-grossa-2016-2025",
+    "title": "Todas as sessões de cinema em Ponta Grossa (2016–2025)",
+    "kind": "Base tratada e dashboard",
+    "year": 2025,
+    "description": "Painel público para consultar as sessões comerciais de cinema registradas em Ponta Grossa entre 2016 e 2025.",
+    "technologies": ["Looker Studio", "Tratamento de dados"],
+    "dataSource": "ANCINE",
+    "categories": ["Cultura", "Dashboard", "Dados públicos"],
+    "contexts": ["dados", "ponto-jornal"],
+    "featured": false,
+    "image": {
+      "src": "/assets/images/projects/cinema-cover.webp",
+      "alt": "Fileiras de poltronas vermelhas vazias em uma sala de cinema"
+    },
+    "visualization": {
+      "provider": "Looker Studio",
+      "embedUrl": "https://datastudio.google.com/embed/reporting/4d73dbe9-18a6-45a2-8b88-ef813cb5c99b/page/omW6F",
+      "externalUrl": "https://datastudio.google.com/u/0/reporting/4d73dbe9-18a6-45a2-8b88-ef813cb5c99b/page/omW6F",
+      "height": 720
+    },
+    "relatedReports": ["cinema-zero-pessoas"],
+    "links": []
+  }
+]
